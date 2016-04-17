@@ -1,0 +1,40 @@
+#banner {
+	padding: 3em 0 0;
+	height: 100vh;
+}
+
+.container {
+	height: 100%;
+	color: #fff;
+}
+
+.logo {
+	outline: 2px solid #fff;
+	width: 80%;
+	height: 30%;
+	//background-color: #fff;
+
+	&__title {
+		font-size: 2em;
+	}
+
+	&__subtitle {
+	}
+
+	@media screen and (orientation:landscape) {
+		&__title {
+			font-size: 2.5em;
+		}
+	}
+	
+	@include from(tablet) {
+		width: 65%;
+		height: 35%;
+	}
+
+	@include from(web) {
+		width: 55%;
+		height: 35%;
+	}
+		
+}

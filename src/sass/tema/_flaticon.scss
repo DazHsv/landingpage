@@ -1,0 +1,53 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 18/04/2016 00:04
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon.eot");
+  src: url("../fonts/flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon.woff") format("woff"),
+       url("../fonts/flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-bars:before { content: "\f100"; }
+.flaticon-mountain:before { content: "\f101"; }
+.flaticon-nation:before { content: "\f102"; }
+.flaticon-social-media:before { content: "\f103"; }
+.flaticon-social-media-1:before { content: "\f104"; }
+.flaticon-tool:before { content: "\f105"; }
+.flaticon-two:before { content: "\f106"; }
+    
+    $font-Flaticon-bars: "\f100";
+    $font-Flaticon-mountain: "\f101";
+    $font-Flaticon-nation: "\f102";
+    $font-Flaticon-social-media: "\f103";
+    $font-Flaticon-social-media-1: "\f104";
+    $font-Flaticon-tool: "\f105";
+    $font-Flaticon-two: "\f106";

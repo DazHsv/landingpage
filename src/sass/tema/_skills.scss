@@ -1,0 +1,44 @@
+#skills {
+	height: calc(100vh);
+	padding: 3em 0;
+}
+
+.skill {
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	padding: .5em;
+
+	
+	&__icon {
+		font-size: 3em;
+		max-height: 80px;
+	}
+
+	&__title {
+		margin-bottom: .5em;
+		line-height: 1;
+	}
+
+	&__content {
+		padding: .5em 0;
+		@include from(web) {
+			padding: 0;
+		}
+	}
+
+	&.red { background-color: $red; }
+	&.blue { background-color: #283593; }
+	&.teal { background-color: $teal;}
+	&.brown {background-color: $brown;}
+
+	@include from(tablet) {
+	}
+}
+
+.separated {
+	padding: .5em;
+	@include from(web) {
+		margin: 1em 0;
+	}
+}
