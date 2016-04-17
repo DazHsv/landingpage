@@ -10,12 +10,17 @@ Se puede observar el proceso en el archvio "gulpfile.js"
 ## Terminado
 
 Menu
+
 Banner
+
 Skills
 
 ## Faltante
 
 Sobre la empresa o el proyecto
+
 Equipo
+
 Registro
+
 Footer
