@@ -14,7 +14,7 @@ gulp.task('jade', function(){
 		.pipe(jade({
 			pretty:false
 		}))
-		.pipe(gulp.dest("build"))
+		.pipe(gulp.dest("./"))
 		.pipe(browserSync.stream());
 });
 
@@ -54,7 +54,7 @@ gulp.task('optimizeimg',function(){
 
 gulp.task('serve',['sass','jshint','minifyjs','jade','optimizeimg'],function(){
 	browserSync.init({
-		server:"./build"
+		server:"./"
 	});
 	
 	gulp.watch("src/**/*.jade",['jade']);
