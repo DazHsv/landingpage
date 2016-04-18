@@ -1,12 +1,5 @@
-body {
-	width: 100vw;
-	height: 100vh;
-	background:$blue url('../img/bg.jpg') center center no-repeat fixed;
-	background-size: cover;
-}
-
 #header {
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.75);
 	height: 3em;
 	position: fixed;
 	width: 100%;
@@ -16,7 +9,4 @@ body {
 	@include from(tablet) {
 		display: none;
 	}
-}
-.full-height {
-	height: 100%;
 }

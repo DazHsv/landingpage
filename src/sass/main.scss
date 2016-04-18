@@ -50,8 +50,12 @@ $fracciones: (
 @import "componentes/modulos";      // Botones, sociales
 
 
+// Componentes personalizados
+@import "tema/base";
 @import "tema/header";
 @import "tema/menu";
 @import "tema/banner";
 @import "tema/flaticon";
 @import "tema/skills";
+@import "tema/team";
+@import "tema/modules";

@@ -1,0 +1,42 @@
+.separated {
+	padding: .5em;
+	@include from(web) {
+		margin: 1em 0;
+	}
+}
+.title {
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+	width: 100vw;
+	line-height: 1.5;
+
+	@include to(movil) {
+		background-color: rgba(0,0,0,.6);
+	}
+}
+.social {
+	color:#fff;
+
+	&--facebook, &--twitter {
+		border: 1px solid #fff;
+		transition: border-radius linear .3s;
+		border-radius:50%;
+		width: 100%;
+		display: block;
+		&:hover {
+			border-radius:0;
+		}
+	}
+
+	&--facebook {
+		background-color: $blue;
+	}
+
+	&--twitter {
+		background-color: lighten($blue,10%);
+	}
+}
+.full-height {
+	height: 100%;
+}

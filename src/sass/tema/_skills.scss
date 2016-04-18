@@ -1,5 +1,6 @@
-#skills {
-	height: calc(100vh);
+#skills, #team {
+	min-height: calc(100vh - 3em);
+	height: auto;
 	padding: 3em 0;
 }
 
@@ -22,6 +23,7 @@
 
 	&__content {
 		padding: .5em 0;
+		font-size: 0.85em;
 		@include from(web) {
 			padding: 0;
 		}
@@ -33,12 +35,5 @@
 	&.brown {background-color: $brown;}
 
 	@include from(tablet) {
-	}
-}
-
-.separated {
-	padding: .5em;
-	@include from(web) {
-		margin: 1em 0;
 	}
 }

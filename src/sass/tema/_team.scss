@@ -1,0 +1,26 @@
+.team {
+//	min-height: calc(50vh - 3em);
+	height: auto;
+	color: #fff;
+
+	&__img {
+		position: relative;
+		border:2px solid #fff;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 1.2em;
+		transform: translateY(120%);
+		z-index: 100;
+	}
+
+	&__social {
+		line-height: 3;
+		transform: translateY(-50%);
+	}
+
+	@include from(tablet) {
+		min-height: auto;
+	}
+}
