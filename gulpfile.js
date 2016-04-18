@@ -65,3 +65,4 @@ gulp.task('serve',['sass','jshint','minifyjs','jade','optimizeimg'],function(){
 
 
 gulp.task('default',['serve']);
+gulp.task('compile',['jade','sass','minifyjs','optimizeimg']);

@@ -29,10 +29,10 @@
 		}
 	}
 
-	&.red { background-color: $red; }
-	&.blue { background-color: #283593; }
-	&.teal { background-color: $teal;}
-	&.brown {background-color: $brown;}
+	&.red { background-color: rgba($red,.9); }
+	&.blue { background-color: rgba(#283593,.9); }
+	&.teal { background-color: rgba($teal,.9);}
+	&.brown {background-color: rgba($brown,.9);}
 
 	@include from(tablet) {
 	}
