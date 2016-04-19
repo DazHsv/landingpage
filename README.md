@@ -14,7 +14,7 @@ Menu
 
 Banner
 
-Skills
+Skills (Fixed)
 
 Equipo
 

@@ -7,7 +7,8 @@ var gulp = require("gulp"),
 	uglify = require("gulp-uglify"),
 	rename = require("gulp-rename"),
 	browserSync = require("browser-sync").create(),
-	image = require('gulp-image');
+	image = require('gulp-image'),
+	prefix = require("gulp-autoprefixer");
 
 gulp.task('jade', function(){
 	return gulp.src('src/*.jade')
@@ -24,6 +25,9 @@ gulp.task('sass',function(){
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
+		.pipe(prefix({
+			browsers:['last 2 versions', '> 5%', 'ie 8']
+		}))
 		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest('./build/css'))
 		.pipe(browserSync.stream());
