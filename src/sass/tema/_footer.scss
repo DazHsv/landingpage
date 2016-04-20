@@ -1,0 +1,37 @@
+#footer{
+	background-color: rgba(0,0,0,.75);
+	height: auto;
+	width: 100%;
+	color: white;
+	font-family: verdana;
+	padding: 2em;
+	font-size: 1.5em;
+}
+
+.img{
+	width: 3em;
+	height: 3em;
+	margin: 0.7em;
+	//outline: 2px solid #fff;
+	border-radius: 50px;
+
+	@include from(web){
+		margin: 1.5em;
+	}
+}
+.info{
+	display: block;
+	height: 2.5em;
+	font-size: 0.7em;
+	margin: 1em;
+}
+
+.letters{
+	font-size: 0.7em;
+	margin-bottom: -1.5em;
+	padding: 0.5em;
+	//outline: 2px solid #fff;
+	@include from(web){
+		margin-bottom: -2em;
+	}
+}
